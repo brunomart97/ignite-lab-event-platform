@@ -14,7 +14,7 @@ export function Router() {
         element={<Event />}
       />
       <Route
-        path='/event/lesson/:slug'
+        path='/event/lesson/:slugParam'
         element={<Event />}
       />
     </Routes>

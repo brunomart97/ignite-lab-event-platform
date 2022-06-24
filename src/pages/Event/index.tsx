@@ -4,14 +4,14 @@ import { Sidebar } from '../../components/Sidebar'
 import { Video } from '../../components/Video'
 
 export function Event() {
-  const { slug } = useParams<{ slug: string }>()
+  const { slugParam } = useParams<{ slugParam: string }>()
 
   return (
     <div className='flex flex-col min-h-screen'>
       <Header />
       <main className='flex flex-1'>
-        {slug
-          ? <Video lessonSlug={slug} />
+        {slugParam
+          ? <Video lessonSlug={slugParam} />
           : <div className='flex-1' />
         }
         <Sidebar />
